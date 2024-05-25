@@ -9,6 +9,7 @@ import { AllFlightsComponent } from './pages/admin/all-flights/all-flights.compo
 import { CityComponent } from './pages/admin/city/city.component';
 import { NewFlightComponent } from './pages/admin/new-flight/new-flight.component';
 import { BookingsComponent } from './pages/admin/bookings/bookings.component';
+import { LoginComponent } from './pages/admin/login/login.component';
 
 const routes: Routes = [
   {
@@ -30,6 +31,10 @@ const routes: Routes = [
     path: 'bookings',
     component: MybookingsComponent,
     title: 'My Bookings'
+  },
+  {
+    path: 'login',
+    component:LoginComponent
   },
   {
     path: '',

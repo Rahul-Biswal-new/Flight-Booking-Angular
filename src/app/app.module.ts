@@ -16,6 +16,16 @@ import { BookFlightComponent } from './pages/website/book-flight/book-flight.com
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {  HttpClientModule } from  '@angular/common/http';
 import { MybookingsComponent } from './pages/website/mybookings/mybookings.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+
+
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+
+import { RouterModule, Routes } from '@angular/router';
+
 
 @NgModule({
   declarations: [
@@ -37,10 +47,14 @@ import { MybookingsComponent } from './pages/website/mybookings/mybookings.compo
     FontAwesomeModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatButtonModule,
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
 })

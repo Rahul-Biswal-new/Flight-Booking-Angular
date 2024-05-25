@@ -1,1 +1,18 @@
-<p>layout works!</p>
+<!-- <p>layout works!</p> -->
+<router-outlet>
+          
+    <mat-toolbar color="primary" class="navbar">
+        <span class="navbar-title">Flights</span>
+        <span class="navbar-spacer"></span>
+        <nav>
+          <a mat-button routerLink="/dashboard" routerLinkActive="active-link">Dashboard</a>
+          <a mat-button routerLink="/airport" routerLinkActive="active-link">Airport</a>
+          <a mat-button routerLink="/city" routerLinkActive="active-link">City</a>
+          <a mat-button routerLink="/all-bookings" routerLinkActive="active-link">All Bookings</a>
+          <a mat-button routerLink="/all-flights" routerLinkActive="active-link">All Flights</a>
+        </nav>
+      </mat-toolbar>
+      
+
+
+</router-outlet>

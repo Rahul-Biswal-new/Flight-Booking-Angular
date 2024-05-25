@@ -1,1 +1,32 @@
-<p>city works!</p>
+<div class="row">
+    <div class="col-12 test-end">
+        <button class="btn btn-success" (click)="addNew()" >Add New</button>
+        <button class="btn btn-success" (click)="bulkUpdateCity()" >Bulk Update</button>
+
+        <button class="btn btn-success" (click)="getAllCity()" >Show List</button>
+
+        </div>
+        </div>
+<div class="row">
+    <div class="col-12">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Sr no</th>
+                    <th>City Name</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let city of cityList; let sr= index" [ngClass]="{ 'highlighted': sr % 2 === 0 }">
+                    <td>{{sr +1 }}</td>
+                    <td>
+                        <input type="text" [(ngModel)]="city.cityName" placeholder=" Enter City Name">
+                      
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

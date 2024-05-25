@@ -1,0 +1,47 @@
+.highlighted {
+    background-color: #f0f0f0; /* or any other color you prefer */
+}
+
+/* Style for the table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+}
+
+/* Style for table header */
+.table thead th {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Style for table body */
+.table tbody td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* Style for table rows */
+.table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Hover effect for table rows */
+.table tbody tr:hover {
+    background-color: #f2f2f2;
+}
+
+/* Style for table footer */
+.table tfoot td {
+    border-top: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Style for table footer (summary row) */
+.table tfoot .summary-row {
+    font-weight: bold;
+}

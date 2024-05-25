@@ -1,0 +1,48 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #0d47a1; /* Dark blue */
+    color: #ffffff; /* White */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-title {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .navbar-spacer {
+    flex: 1 1 auto;
+  }
+  
+  nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #ffeb3b; /* Yellow on hover */
+  }
+  
+  .active-link {
+    border-bottom: 2px solid #ffeb3b; /* Yellow underline for active link */
+  }
+  
+  @media (max-width: 768px) {
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav a {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
